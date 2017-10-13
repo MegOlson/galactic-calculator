@@ -5,6 +5,7 @@ $(document).ready(function(){
     e.preventDefault();
     $(".output").removeClass("hide");
     $(".error").addClass("hide");
+    $(".tooOld").addClass("hide");
 
     const ageInput = parseInt($('#age').val());
     const gender = $('.gender').val();
@@ -20,13 +21,21 @@ $(document).ready(function(){
        $(".error").removeClass("hide");
      }
 
-    $(".mercury").text("Your age on Mercury is: " + calculator.ageOnMercury(ageInput) + " and your average life expectancy on Mercury is: " + calculator.mercuryExpectancyCalculator(ageInput, gender));
+     $(".mercury").text("Your age on Mercury is: " + calculator.ageOnMercury(ageInput));
+     $(".venus").text("Your age on Venus is: " + calculator.ageOnVenus(ageInput));
+     $(".mars").text("Your age on Mars is: " + calculator.ageOnMars(ageInput));
+     $(".jupiter").text("Your age on Jupiter is: " + calculator.ageOnJupiter(ageInput));
 
-    $(".venus").text("Your age on Venus is: " + calculator.ageOnVenus(ageInput) + " and your average life expectancy on Venus is: " + calculator.venusExpectancyCalculator(ageInput, gender));
-
-    $(".mars").text("Your age on Mars is: " + calculator.ageOnMars(ageInput) + " and your average life expectancy on Mars is: " + calculator.marsExpectancyCalculator(ageInput, gender));
-
-    $(".jupiter").text("Your age on Jupiter is: " + calculator.ageOnJupiter(ageInput) + " and your average life expectancy on Jupiter is: " + calculator.jupiterExpectancyCalculator(ageInput, gender));
-
+     if (ageInput > 81 && gender === "Female" || ageInput > 76 && gender === "Male"){
+       $(".tooOld").removeClass("hide");
+       $(".tooOld").text("You have surpassed the average life expectancy of your demographic. Live it up! Who knows how much longer you've got!")
+       $(".output").addClass("hide");
+     }
+     else if (ageInput <= 81 && gender === "Female" || ageInput <= 76 && gender === "Male") {
+       $(".mercuryFuture").text("Your average life expectancy on Mercury is: " + calculator.mercuryExpectancyCalculator(ageInput, gender));
+       $(".venusFuture").text("Your average life expectancy on Venus is: " + calculator.venusExpectancyCalculator(ageInput, gender));
+       $(".marsFuture").text("Your average life expectancy on Mars is: " + calculator.marsExpectancyCalculator(ageInput, gender));
+       $(".jupiterFuture").text("Your average life expectancy on Jupiter is: " + calculator.jupiterExpectancyCalculator(ageInput, gender));
+     }
   });
 });
