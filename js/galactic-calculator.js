@@ -20,13 +20,20 @@ class Calculator {
     return age;
   }
 
-  everything(ageInput) {
-    if (ageInput.toString().length === 2) {
-      this.ageToSeconds(ageInput);
-    } else {
-      this.ageCalculator(ageInput);
-    }
+  // everything(ageInput) {
+  //   if (ageInput.toString().length === 2) {
+  //     this.ageToSeconds(ageInput);
+  //   } else {
+  //     this.ageCalculator(ageInput);
+  //   }
+  // }
+
+  ageOnMercury(age) {
+    let mercuryAge = age / .24;
+    mercuryAge = Math.floor(mercuryAge);
+    return mercuryAge;
   }
+
 }
 
 exports.calculatorModule = Calculator;

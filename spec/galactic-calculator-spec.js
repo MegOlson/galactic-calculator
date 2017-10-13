@@ -17,4 +17,8 @@ describe ('Calculator', function(){
     expect(calculator.ageCalculator(1997)).toEqual(20)
   });
 
+  it('should return users Mercury age based on their age on earth', function(){
+    expect(calculator.ageOnMercury(20)).toEqual(83)
+  });
+
 });
