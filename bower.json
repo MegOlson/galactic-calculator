@@ -1,14 +1,12 @@
 {
-  "name": "galactic_calculator
-",
-  "description": "#### _New Project: Epicodus exercise, 10.13.2017_",
-  "main": "index.js",
+  "name": "galactic_calculator",
+  "description": "#### _Age Calculator: Epicodus exercise, 10.13.2017_",
+  "main": "gulpfile.js",
   "authors": [
-    "Megan Olson <meganannetteolson@yahoo.com>"
+    "mo <meganannetteolson@yahoo.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/MegOlson/galactic-calculator
-",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
