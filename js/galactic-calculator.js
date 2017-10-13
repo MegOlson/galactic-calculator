@@ -1,5 +1,7 @@
 class Calculator {
   constructor(){
+    this.maleExpectancy = 76;
+    this.femaleExpectancy = 81;
   }
 
   // ageToSeconds(age) {
@@ -8,7 +10,6 @@ class Calculator {
   // }
 
   ageCalculator(birthYear) {
-    // let ageInSeconds = age * (31556952);
     let today = new Date();
     let currentYear = today.getFullYear();
     let age = currentYear - birthYear;
@@ -37,6 +38,15 @@ class Calculator {
     let jupiterAge = age / 11.86;
     jupiterAge = Math.floor(jupiterAge);
     return jupiterAge;
+  }
+
+  lifeExpectancyCalculator(age, gender) {
+    if (gender === "female") {
+      var timeLeftonEarth = this.femaleExpectancy - age;
+    } else {
+      var timeLeftonEarth = this.maleExpectancy - age;
+    }
+    return timeLeftonEarth;
   }
 }
 

@@ -33,5 +33,8 @@ describe ('Calculator', function(){
     expect(calculator.ageOnJupiter(20)).toEqual(1)
   });
 
+  it('should calculate the average life expectancy on earth based on gender type', function(){
+    expect(calculator.lifeExpectancyCalculator(20, "female")).toEqual(61)
+  });
 
 });
