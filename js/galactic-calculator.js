@@ -1,11 +1,5 @@
 class Calculator {
   constructor(){
-    // this.earthYears;
-    // this.murceryYears;
-    // this.vensusYears;
-    // this.marsYears;
-    // this.jupiterYears;
-    //
   }
 
   ageToSeconds(age) {
@@ -20,13 +14,17 @@ class Calculator {
     return age;
   }
 
-  // everything(ageInput) {
-  //   if (ageInput.toString().length === 2) {
-  //     this.ageToSeconds(ageInput);
-  //   } else {
-  //     this.ageCalculator(ageInput);
-  //   }
-  // }
+  calculateGalaxyAge(ageInput) {
+    // if (ageInput.toString().length === 2) {
+      this.ageToSeconds(ageInput);
+    // } else {
+    //   this.ageCalculator(ageInput);
+    // }
+    this.ageOnMercury(ageInput);
+    this.ageOnVenus(ageInput);
+    this.ageOnMars(ageInput);
+    this.ageOnJupiter(ageInput);
+  }
 
   ageOnMercury(age) {
     let mercuryAge = age / .24;
