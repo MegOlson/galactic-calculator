@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Galactic Calculator</title>
@@ -11,14 +12,14 @@
   <body>
     <div class="containter">
       <div class="jumbotron">
-        <h2>Galactic Age Calculator</h2>
+        <h1>Galactic Age Calculator</h1>
       </div>
     </div>
 
     <form id="check-age">
       <label for="age">Enter your age or year you were born:</label>
       <div class="form-group">
-        <input type="number" id="age" class="form-control">
+        <center><input type="number" id="age" class="form-control"></center>
         <h4>Gender Type</h4>
         <select class="gender">
           <option value="Male">Male</option>
@@ -31,17 +32,28 @@
       <p class="tooOld"></p>
       <p class="error"></p>
       <div class="output">
-       <p class="gender"></p>
-       <p class="earth"></p>
-       <p class="earthFuture"></p>
-       <p class="mercury"></p>
-       <p class="mercuryFuture"></p>
-       <p class="mars"></p>
-       <p class="marsFuture"></p>
-       <p class="venus"></p>
-       <p class="venusFuture"></p>
-       <p class="jupiter"></p>
-       <p class="jupiterFuture"></p>
+        <div class="row">
+          <div class="col-md-2">
+           <p class="earth"></p><br>
+           <p class="earthFuture"></p>
+         </div>
+         <div class="col-md-2">
+           <p class="mercury"></p>
+           <p class="mercuryFuture"></p>
+         </div>
+          <div class="col-md-2">
+           <p class="mars"></p>
+           <p class="marsFuture"></p>
+         </div>
+          <div class="col-md-2">
+           <p class="venus"></p>
+           <p class="venusFuture"></p>
+         </div>
+         <div class="col-md-2">
+           <p class="jupiter"></p>
+           <p class="jupiterFuture"></p>
+         </div>
+        </div>
       </div>
     </div>
   </body>

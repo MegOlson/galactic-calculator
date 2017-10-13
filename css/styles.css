@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   margin: 20px;
   color: white;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 .jumbotron {
@@ -20,6 +21,7 @@ body {
 
 .btn {
   background-color: rgba(125, 86, 142, .4);
+  font-size: 25px;
 }
 :hover .btn {
   color: white;
@@ -33,11 +35,21 @@ body {
   text-align: center;
 }
 
+.output {
+  margin-left: 15%;
+}
+
 form {
-  margin-left: 40%;
+  font-size: 30px;
+  text-align: center;
 }
 
 input {
   color: black;
   max-width: 15%;
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
 }
