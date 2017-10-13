@@ -44,10 +44,10 @@ describe ('Calculator', function(){
   it('should calculate the average life expectancy on venus based on gender type', function(){
     expect(calculator.venusExpectancyCalculator(20, "female")).toEqual(98)
   });
-  //
-  // it('should calculate the average life expectancy on earth based on gender type', function(){
-  //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
-  // });
+
+  it('should calculate the average life expectancy on earth based on gender type', function(){
+    expect(calculator.marsExpectancyCalculator(20, "female")).toEqual(33)
+  });
   //
   // it('should calculate the average life expectancy on earth based on gender type', function(){
   //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)

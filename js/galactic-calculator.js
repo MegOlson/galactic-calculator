@@ -86,21 +86,21 @@ class Calculator {
   }
 
   marsExpectancyCalculator(age, gender) {
-    let mercuryFemaleExpectancy = this.femaleExpectancy / .24;
-    mercuryFemaleExpectancy = Math.floor(mercuryFemaleExpectancy);
+    let marsFemaleExpectancy = this.femaleExpectancy / 1.88;
+    marsFemaleExpectancy = Math.floor(marsFemaleExpectancy);
 
-    let mercuryMaleExpectancy = this.maleExpectancy / .24;
-    mercuryMaleExpectancy = Math.floor(mercuryMaleExpectancy);
+    let marsMaleExpectancy = this.maleExpectancy / 1.88;
+    marsMaleExpectancy = Math.floor(marsMaleExpectancy);
 
-    let mercuryAge = age / .24;
-    mercuryAge = Math.floor(mercuryAge);
+    let marsAge = age / 1.88;
+    marsAge = Math.floor(marsAge);
 
     if (gender === "female") {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
+      var timeLeftonMars = marsFemaleExpectancy - marsAge;
     } else {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
+      var timeLeftonMars = marsFemaleExpectancy - marsage;
     }
-    return timeLeftonMercury;
+    return timeLeftonMars;
   }
 
   mercuryExpectancyCalculator(age, gender) {
