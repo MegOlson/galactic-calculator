@@ -4,8 +4,10 @@ $(document).ready(function(){
   $("#check-age").submit(function(e){
     e.preventDefault();
 
-    const ageInput = $('#age').val().parseInt
+    const ageInput = parseInt($('#age').val());
+    let calculator = new Calculator();
 
+    $(".age-in-seconds").text(calculator.ageToSeconds(ageInput));
 
   });
 });

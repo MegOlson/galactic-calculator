@@ -17,10 +17,4 @@ describe ('Calculator', function(){
     expect(calculator.ageCalculator(1997)).toEqual(20)
   });
 
-  // it('should return users age based on their dob and returns age in seconds', function(){
-  //   expect(calculator.ageToSeconds(11/05/1997)).toEqual(631139040)
-  // });
-
-
-
 });
