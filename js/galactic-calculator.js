@@ -34,6 +34,24 @@ class Calculator {
     return mercuryAge;
   }
 
+  ageOnVenus(age) {
+    let venusAge = age / .62;
+    venusAge = Math.floor(venusAge);
+    return venusAge;
+  }
+
+  ageOnMars(age) {
+    let marsAge = age / 1.88;
+    marsAge = Math.floor(marsAge);
+    return marsAge;
+  }
+
+  ageOnJupiter(age) {
+    let jupiterAge = age / 11.86;
+    jupiterAge = Math.floor(jupiterAge);
+    return jupiterAge;
+  }
+
 }
 
 exports.calculatorModule = Calculator;
