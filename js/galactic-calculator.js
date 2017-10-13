@@ -68,30 +68,57 @@ class Calculator {
   }
 
   venusExpectancyCalculator(age, gender) {
+    let venusFemaleExpectancy = this.femaleExpectancy / .62;
+    venusFemaleExpectancy = Math.floor(venusFemaleExpectancy);
+
+    let venusMaleExpectancy = this.maleExpectancy / .62;
+    venusMaleExpectancy = Math.floor(venusMaleExpectancy);
+
+    let venusAge = age / .62;
+    venusAge = Math.floor(venusAge);
+
     if (gender === "female") {
-      var timeLeftonEarth = this.femaleExpectancy - age;
+      var timeLeftonVenus = venusFemaleExpectancy - venusAge;
     } else {
-      var timeLeftonEarth = this.maleExpectancy - age;
+      var timeLeftonVenus = venusFemaleExpectancy - venusage;
     }
-    return timeLeftonEarth;
+    return timeLeftonVenus;
   }
 
   marsExpectancyCalculator(age, gender) {
+    let mercuryFemaleExpectancy = this.femaleExpectancy / .24;
+    mercuryFemaleExpectancy = Math.floor(mercuryFemaleExpectancy);
+
+    let mercuryMaleExpectancy = this.maleExpectancy / .24;
+    mercuryMaleExpectancy = Math.floor(mercuryMaleExpectancy);
+
+    let mercuryAge = age / .24;
+    mercuryAge = Math.floor(mercuryAge);
+
     if (gender === "female") {
-      var timeLeftonEarth = this.femaleExpectancy - age;
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
     } else {
-      var timeLeftonEarth = this.maleExpectancy - age;
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
     }
-    return timeLeftonEarth;
+    return timeLeftonMercury;
   }
 
-  jupiterExpectancyCalculator(age, gender) {
+  mercuryExpectancyCalculator(age, gender) {
+    let mercuryFemaleExpectancy = this.femaleExpectancy / .24;
+    mercuryFemaleExpectancy = Math.floor(mercuryFemaleExpectancy);
+
+    let mercuryMaleExpectancy = this.maleExpectancy / .24;
+    mercuryMaleExpectancy = Math.floor(mercuryMaleExpectancy);
+
+    let mercuryAge = age / .24;
+    mercuryAge = Math.floor(mercuryAge);
+
     if (gender === "female") {
-      var timeLeftonEarth = this.femaleExpectancy - age;
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
     } else {
-      var timeLeftonEarth = this.maleExpectancy - age;
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
     }
-    return timeLeftonEarth;
+    return timeLeftonMercury;
   }
 }
 
