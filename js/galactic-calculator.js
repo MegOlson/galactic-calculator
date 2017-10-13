@@ -103,22 +103,22 @@ class Calculator {
     return timeLeftonMars;
   }
 
-  mercuryExpectancyCalculator(age, gender) {
-    let mercuryFemaleExpectancy = this.femaleExpectancy / .24;
-    mercuryFemaleExpectancy = Math.floor(mercuryFemaleExpectancy);
+  jupiterExpectancyCalculator(age, gender) {
+    let jupiterFemaleExpectancy = this.femaleExpectancy / 11.86;
+    jupiterFemaleExpectancy = Math.floor(jupiterFemaleExpectancy);
 
-    let mercuryMaleExpectancy = this.maleExpectancy / .24;
-    mercuryMaleExpectancy = Math.floor(mercuryMaleExpectancy);
+    let jupiterMaleExpectancy = this.maleExpectancy / 11.86;
+    jupiterMaleExpectancy = Math.floor(jupiterMaleExpectancy);
 
-    let mercuryAge = age / .24;
-    mercuryAge = Math.floor(mercuryAge);
+    let jupiterAge = age / 11.86;
+    jupiterAge = Math.floor(jupiterAge);
 
     if (gender === "female") {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
+      var timeLeftonJupiter = jupiterFemaleExpectancy - jupiterAge;
     } else {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
+      var timeLeftonJupiter = jupiterFemaleExpectancy - jupiterage;
     }
-    return timeLeftonMercury;
+    return timeLeftonJupiter;
   }
 }
 

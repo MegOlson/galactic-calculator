@@ -48,9 +48,9 @@ describe ('Calculator', function(){
   it('should calculate the average life expectancy on earth based on gender type', function(){
     expect(calculator.marsExpectancyCalculator(20, "female")).toEqual(33)
   });
-  //
-  // it('should calculate the average life expectancy on earth based on gender type', function(){
-  //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
-  // });
+
+  it('should calculate the average life expectancy on earth based on gender type', function(){
+    expect(calculator.jupiterExpectancyCalculator(20, "female")).toEqual(5)
+  });
 
 });
