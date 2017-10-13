@@ -12,6 +12,13 @@ class Calculator {
     let ageInSeconds = age * (31556952);
     return ageInSeconds;
   }
+
+  ageCalculator(birthYear) {
+    let today = new Date();
+    let currentYear = today.getFullYear();
+    let age = currentYear - birthYear;
+    return age;
+  }
 }
 
 exports.calculatorModule = Calculator;
