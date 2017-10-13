@@ -3,13 +3,20 @@ var Calculator = require('./../js/galactic-calculator.js').calculatorModule;
 $(document).ready(function(){
   $("#check-age").submit(function(e){
     e.preventDefault();
+    $(".output").removeClass("hide");
+    $(".error").addClass("hide");
 
     const ageInput = parseInt($('#age').val());
     let calculator = new Calculator();
     if (ageInput.toString().length <= 3) {
        $(".earth").text("Your age on Earth is: " + ageInput);
-     } else if (ageInput.toString().length >= 4) {
+     } else if (ageInput.toString().length === 4) {
        $(".earth").text("Your age on Earth is: " +        calculator.ageCalculator(ageInput));
+     } else if (ageInput.toString().length > 4){
+       $(".error").text("Please enter a valid age or birth year.");
+       $(".output").addClass("hide");
+       $(".error").removeClass("hide");
+
      }
 
     $(".mercury").text("Your age on Mercury is: " + calculator.ageOnMercury(ageInput));
