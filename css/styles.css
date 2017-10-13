@@ -28,3 +28,16 @@ body {
 .gender {
   color: black;
 }
+
+.results {
+  text-align: center;
+}
+
+form {
+  margin-left: 40%;
+}
+
+input {
+  color: black;
+  max-width: 15%;
+}
