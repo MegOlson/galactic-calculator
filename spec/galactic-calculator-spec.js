@@ -28,10 +28,10 @@ describe ('Calculator', function(){
   it('should return users Mars age based on their age on earth', function(){
     expect(calculator.ageOnMars(20)).toEqual(10)
   });
-  //
-  // it('should return users Jupiter age based on their age on earth', function(){
-  //   expect(calculator.ageOnJupiter(20)).toEqual(1)
-  // });
+  
+  it('should return users Jupiter age based on their age on earth', function(){
+    expect(calculator.ageOnJupiter(20)).toEqual(1)
+  });
 
 
 });
