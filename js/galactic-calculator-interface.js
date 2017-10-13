@@ -11,6 +11,11 @@ $(document).ready(function(){
     const gender = $('.gender').val();
     let calculator = new Calculator();
 
+    if (!ageInput) {
+      $(".error").removeClass("hide");
+      $(".error").text("Please your age.");
+    }
+
     if (ageInput.toString().length <= 3) {
        $(".earth").text("Your age on Earth is: " + ageInput));
        $(".earthFuture").text(" Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
@@ -18,7 +23,7 @@ $(document).ready(function(){
        $(".earth").text("Your age on Earth is: " + calculator.ageCalculator(ageInput));
        $(".earthFuture").text(" Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
      } else if (ageInput.toString().length > 4){
-       $(".error").text("Please enter a valid age or birth year.");
+       $(".error").text("Please enter a valid age.");
        $(".output").addClass("hide");
        $(".error").removeClass("hide");
      }
