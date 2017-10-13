@@ -40,7 +40,52 @@ class Calculator {
     return jupiterAge;
   }
 
-  lifeExpectancyCalculator(age, gender) {
+  earthExpectancyCalculator(age, gender) {
+    if (gender === "female") {
+      var timeLeftonEarth = this.femaleExpectancy - age;
+    } else {
+      var timeLeftonEarth = this.maleExpectancy - age;
+    }
+    return timeLeftonEarth;
+  }
+
+  mercuryExpectancyCalculator(age, gender) {
+    let mercuryFemaleExpectancy = this.femaleExpectancy / .24;
+    mercuryFemaleExpectancy = Math.floor(mercuryFemaleExpectancy);
+
+    let mercuryMaleExpectancy = this.maleExpectancy / .24;
+    mercuryMaleExpectancy = Math.floor(mercuryMaleExpectancy);
+
+    let mercuryAge = age / .24;
+    mercuryAge = Math.floor(mercuryAge);
+
+    if (gender === "female") {
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
+    } else {
+      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
+    }
+    return timeLeftonMercury;
+  }
+
+  venusExpectancyCalculator(age, gender) {
+    if (gender === "female") {
+      var timeLeftonEarth = this.femaleExpectancy - age;
+    } else {
+      var timeLeftonEarth = this.maleExpectancy - age;
+    }
+    return timeLeftonEarth;
+  }
+
+  marsExpectancyCalculator(age, gender) {
+    if (gender === "female") {
+      var timeLeftonEarth = this.femaleExpectancy - age;
+    } else {
+      var timeLeftonEarth = this.maleExpectancy - age;
+    }
+    return timeLeftonEarth;
+  }
+
+  jupiterExpectancyCalculator(age, gender) {
     if (gender === "female") {
       var timeLeftonEarth = this.femaleExpectancy - age;
     } else {

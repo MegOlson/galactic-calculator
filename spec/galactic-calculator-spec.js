@@ -34,7 +34,23 @@ describe ('Calculator', function(){
   });
 
   it('should calculate the average life expectancy on earth based on gender type', function(){
-    expect(calculator.lifeExpectancyCalculator(20, "female")).toEqual(61)
+    expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
   });
+
+  it('should calculate the average life expectancy on mercury based on gender type', function(){
+    expect(calculator.mercuryExpectancyCalculator(20, "female")).toEqual(254)
+  });
+
+  // it('should calculate the average life expectancy on earth based on gender type', function(){
+  //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
+  // });
+  //
+  // it('should calculate the average life expectancy on earth based on gender type', function(){
+  //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
+  // });
+  //
+  // it('should calculate the average life expectancy on earth based on gender type', function(){
+  //   expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
+  // });
 
 });
