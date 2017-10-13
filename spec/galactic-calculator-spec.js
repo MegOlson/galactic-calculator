@@ -34,23 +34,27 @@ describe ('Calculator', function(){
   });
 
   it('should calculate the average life expectancy on earth based on gender type', function(){
-    expect(calculator.earthExpectancyCalculator(20, "female")).toEqual(61)
+    expect(calculator.earthExpectancyCalculator(20, "Female")).toEqual(61)
   });
 
   it('should calculate the average life expectancy on mercury based on gender type', function(){
-    expect(calculator.mercuryExpectancyCalculator(20, "female")).toEqual(254)
+    expect(calculator.mercuryExpectancyCalculator(20, "Female")).toEqual(254)
   });
 
   it('should calculate the average life expectancy on venus based on gender type', function(){
-    expect(calculator.venusExpectancyCalculator(20, "female")).toEqual(98)
+    expect(calculator.venusExpectancyCalculator(20, "Female")).toEqual(98)
+  });
+
+  it('should calculate the average life expectancy on mars based on gender type', function(){
+    expect(calculator.marsExpectancyCalculator(20, "Female")).toEqual(33)
   });
 
   it('should calculate the average life expectancy on earth based on gender type', function(){
-    expect(calculator.marsExpectancyCalculator(20, "female")).toEqual(33)
+    expect(calculator.jupiterExpectancyCalculator(20, "Female")).toEqual(5)
   });
 
-  it('should calculate the average life expectancy on earth based on gender type', function(){
-    expect(calculator.jupiterExpectancyCalculator(20, "female")).toEqual(5)
+  it('should calculate the average life expectancy on mercury based on gender type', function(){
+    expect(calculator.mercuryExpectancyCalculator(20, "Male")).toEqual(233)
   });
 
 });

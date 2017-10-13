@@ -41,12 +41,13 @@ class Calculator {
   }
 
   earthExpectancyCalculator(age, gender) {
-    if (gender === "female") {
-      var timeLeftonEarth = this.femaleExpectancy - age;
-    } else {
-      var timeLeftonEarth = this.maleExpectancy - age;
+    let timeLeftOnEarth;
+    if (gender === "Female") {
+      timeLeftOnEarth = this.femaleExpectancy - age;
+    } else if (gender === "Male"){
+      timeLeftOnEarth = this.maleExpectancy - age;
     }
-    return timeLeftonEarth;
+    return timeLeftOnEarth;
   }
 
   mercuryExpectancyCalculator(age, gender) {
@@ -59,12 +60,13 @@ class Calculator {
     let mercuryAge = age / .24;
     mercuryAge = Math.floor(mercuryAge);
 
-    if (gender === "female") {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryAge;
-    } else {
-      var timeLeftonMercury = mercuryFemaleExpectancy - mercuryage;
+    let timeLeftOnMercury;
+    if (gender === "Female") {
+      timeLeftOnMercury = mercuryFemaleExpectancy - mercuryAge;
+    } else if (gender === "Male"){
+      timeLeftOnMercury = mercuryMaleExpectancy - mercuryAge;
     }
-    return timeLeftonMercury;
+    return timeLeftOnMercury;
   }
 
   venusExpectancyCalculator(age, gender) {
@@ -77,12 +79,13 @@ class Calculator {
     let venusAge = age / .62;
     venusAge = Math.floor(venusAge);
 
-    if (gender === "female") {
-      var timeLeftonVenus = venusFemaleExpectancy - venusAge;
-    } else {
-      var timeLeftonVenus = venusFemaleExpectancy - venusage;
+    let timeLeftOnVenus;
+    if (gender === "Female") {
+      timeLeftOnVenus = venusFemaleExpectancy - venusAge;
+    } else if (gender === "Male") {
+      timeLeftOnVenus = venusMaleExpectancy - venusAge;
     }
-    return timeLeftonVenus;
+    return timeLeftOnVenus;
   }
 
   marsExpectancyCalculator(age, gender) {
@@ -95,12 +98,13 @@ class Calculator {
     let marsAge = age / 1.88;
     marsAge = Math.floor(marsAge);
 
-    if (gender === "female") {
-      var timeLeftonMars = marsFemaleExpectancy - marsAge;
-    } else {
-      var timeLeftonMars = marsFemaleExpectancy - marsage;
+    let timeLeftOnMars;
+    if (gender === "Female") {
+      timeLeftOnMars = marsFemaleExpectancy - marsAge;
+    } else if (gender === "Male") {
+      timeLeftOnMars = marsMaleExpectancy - marsAge;
     }
-    return timeLeftonMars;
+    return timeLeftOnMars;
   }
 
   jupiterExpectancyCalculator(age, gender) {
@@ -113,12 +117,13 @@ class Calculator {
     let jupiterAge = age / 11.86;
     jupiterAge = Math.floor(jupiterAge);
 
-    if (gender === "female") {
-      var timeLeftonJupiter = jupiterFemaleExpectancy - jupiterAge;
-    } else {
-      var timeLeftonJupiter = jupiterFemaleExpectancy - jupiterage;
+    let timeLeftOnJupiter;
+    if (gender === "Female") {
+      timeLeftOnJupiter = jupiterFemaleExpectancy - jupiterAge;
+    } else if (gender === "Male") {
+      timeLeftOnJupiter = jupiterMaleExpectancy - jupiterAge;
     }
-    return timeLeftonJupiter;
+    return timeLeftOnJupiter;
   }
 }
 
