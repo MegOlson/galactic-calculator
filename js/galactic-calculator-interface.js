@@ -17,11 +17,11 @@ $(document).ready(function(){
     }
 
     if (ageInput.toString().length <= 3) {
-       $(".earth").text("Your age on Earth is: " + ageInput));
-       $(".earthFuture").text(" Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
+       $(".earth").text("Your age on Earth is: " + ageInput);
+       $(".earthFuture").text("Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
      } else if (ageInput.toString().length === 4) {
        $(".earth").text("Your age on Earth is: " + calculator.ageCalculator(ageInput));
-       $(".earthFuture").text(" Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
+       $(".earthFuture").text("Your average life expectancy on Earth is: " + calculator.earthExpectancyCalculator(ageInput, gender));
      } else if (ageInput.toString().length > 4){
        $(".error").text("Please enter a valid age.");
        $(".output").addClass("hide");
