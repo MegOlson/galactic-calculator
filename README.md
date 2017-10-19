@@ -44,6 +44,21 @@ _Web application that takes in a user's age and gender and calculates their age 
 
 * _Clone this repository_
 * _In your terminal type "git clone galactic-calculator_
+* _Run the following commands in your terminal:_
+  * npm install
+  * bower install
+  * gulp build
+  * gulp serve
+* _Follow the automatically opened window with the Galactic Calculator._
+
+## Potential Future Additions to project
+
+* Adding more fields to user's entry to more accurately calculate user's life expectancy such as:
+  * Ethnicity
+  * Eating Habits
+  * Exercise Habits
+  * Family Health History
+* Adding different calculations if user is older their expected lifespan.
 
 ## Known Bugs 🐛🐛🐛
 
