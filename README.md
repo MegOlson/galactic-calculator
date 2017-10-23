@@ -75,6 +75,10 @@ _Feel free to contact me at meganannetteolson@yahoo.com_
 * _Javascript/jQuery_
 * _Bootstrap_
 
+### Contributors
+
+<img src="https://avatars.githubusercontent.com/MegOlson?s=100" width="100" alt="Megan Olson" /><br />[<sub>Megan Olson</sub>](https://github.com/MegOlson)<br />[💻](https://github.com/galactic-calculator/commits?author=MegOlson) [📖](https://github.com/galactic-calculator/commits?author=MegOlson) [⚠️](https://github.com/galactic-calculator/commits?author=MegOlson) 🎨
+
 ### License
 
 Copyright (c) 2017 **Megan Olson**
